@@ -1,16 +1,84 @@
-# React + Vite
+=# 📚 ML Study Library
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal, open-source collection of interactive ML study materials — built as a React + Vite web app. Currently features a full 30-chapter course on **Agentic ML System Design**, with more modules planned.
 
-Currently, two official plugins are available:
+> Designed for ML Engineers who want depth: real architecture decisions, production trade-offs, cost math, security threat models, and interview frameworks — not just theory.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📖 Current Content
 
-## React Compiler
+### 🤖 Agentic ML System Design — 30 Chapters
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+A complete course for enterprise ML engineers covering the full lifecycle: design → build → test → deploy → operate.
 
-## Expanding the ESLint configuration
+| Section | Chapters | Topics |
+|---|---|---|
+| **Foundations** | 4 | What Makes an Agent, LLM Mechanics, Context Engineering, Harness Engineering |
+| **Design** | 5 | Agent Patterns, Multi-Agent Systems, Memory Systems, RAG at Scale, MCP & A2A Protocols |
+| **Engineering** | 5 | Prompt Engineering, Orchestration & State, Error Handling, Infrastructure, Deployment Patterns |
+| **Security** | 3 | Security & Threats, Auth & Multi-Tenancy, Governance |
+| **Quality** | 3 | Evaluation & Testing, Agent Benchmarks, Observability |
+| **Optimization** | 3 | Cost Optimization, Latency Optimization, Data Flywheel |
+| **Walkthroughs** | 4 | Support Agent, Contract Pipeline, SOC Agent, Research System |
+| **Interview Prep** | 3 | Interview Framework, Decision Flowchart, Tech Stack Reference |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Each chapter includes architecture diagrams, code snippets, comparison tables, callouts, and production-grade design patterns.
+
+## ⚙️ Getting Started
+
+### Prerequisites
+
+- Node.js v20 or higher
+- npm
+
+### Installation
+
+```bash
+# Clone the repo
+git clone https://github.com/YOUR_USERNAME/ML-Study-Library.git
+cd ML-Study-Library
+
+# Install dependencies
+npm install
+
+# Start the dev server
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+
+
+
+## 🚀 Deployment
+
+### Vercel (Recommended)
+
+1. Push this repo to GitHub
+2. Go to [vercel.com](https://vercel.com) → **Add New Project**
+3. Import your `ML-Study-Library` repo
+4. Click **Deploy** — live in ~1 minute
+
+### Netlify
+
+1. Go to [netlify.com](https://netlify.com) → **Add New Site** → **Import from Git**
+2. Select your repo
+3. Set build command: `npm run build`
+4. Set publish directory: `dist`
+5. Click **Deploy**
+
+### GitHub Pages
+
+```bash
+npm run build
+# Deploy the /dist folder to your gh-pages branch
+```
+
+## 🤝 Contributing
+
+Contributions are welcome. If you want to add a new study module or improve existing content:
+
+1. Fork the repo
+2. Create a branch: `git checkout -b feature/your-module-name`
+3. Add your content following the existing component patterns (`Code`, `Diagram`, `Table`, `Callout`, `FlowBox`)
+4. Open a pull request with a description of what you added
+
