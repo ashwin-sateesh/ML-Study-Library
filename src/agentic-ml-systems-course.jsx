@@ -1014,7 +1014,7 @@ export default function App() {
       <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
       {sidebarOpen && (
         <nav style={{ width: 260, minWidth: 260, background: "#0f1629", borderRight: "1px solid #1e293b", overflowY: "auto", padding: "16px 0" }}>
-          <div style={{ padding: "8px 20px 20px", fontSize: 15, fontWeight: 700, color: "#818cf8", letterSpacing: 0.5 }}>📐 Agentic ML Course</div>
+          <div style={{ padding: "8px 20px 20px", fontSize: 15, fontWeight: 700, color: "#818cf8", letterSpacing: 0.5 }}>📐 Agentic ML Systems</div>
           {CHAPTERS.map((ch) => {
             const showSection = ch.section !== lastSection;
             lastSection = ch.section;
