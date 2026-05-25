@@ -1,4 +1,4 @@
-=# 📚 ML Study Library
+# 📚 ML Study Library
 
 A personal, open-source collection of interactive ML study materials — built as a React + Vite web app. Currently features a full 30-chapter course on **Agentic ML System Design**, with more modules planned.
 
