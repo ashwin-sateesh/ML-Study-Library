@@ -53,6 +53,7 @@ function Code({ children, lang }) {
       borderRadius: "8px", overflow: "auto", fontSize: "13px",
       lineHeight: 1.6, border: "1px solid #21262d", margin: "16px 0",
       fontFamily: "'JetBrains Mono', 'Fira Code', monospace",
+      textAlign: "left"
     }}>
       {lang && <div style={{ color: "#8b949e", fontSize: 11, marginBottom: 8, textTransform: "uppercase", letterSpacing: 1 }}>{lang}</div>}
       <code>{children}</code>
@@ -67,6 +68,7 @@ function Diagram({ children, title }) {
       border: "1px solid #334155", borderRadius: 12, padding: 24,
       margin: "20px 0", fontFamily: "'JetBrains Mono', monospace",
       fontSize: 13, lineHeight: 1.5, color: "#a5b4fc", overflow: "auto",
+      textAlign: "left"
     }}>
       {title && <div style={{ color: "#818cf8", fontWeight: 700, marginBottom: 12, fontSize: 14, letterSpacing: 0.5 }}>{title}</div>}
       <pre style={{ margin: 0, whiteSpace: "pre", color: "#c4b5fd" }}>{children}</pre>
