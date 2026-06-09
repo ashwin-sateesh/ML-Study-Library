@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { HashRouter, Routes, Route, Link } from "react-router-dom";
 import AgenticCourse from "./agentic-ml-systems-course";
 import AgenticInfraCourse from "./agentic-ml-infrastructure";
 import GPUCourse from "./gpu-inference-deep-dive";
@@ -67,7 +67,7 @@ function Home() {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -76,6 +76,6 @@ export default function App() {
         <Route path="/infra" element={<AgenticInfraCourse />} />
         <Route path="/flowchart" element={<Flowchart />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
