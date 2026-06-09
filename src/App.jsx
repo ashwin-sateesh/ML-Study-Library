@@ -28,7 +28,7 @@ function Nav() {
 function Flowchart() {
   return (
     <iframe
-      src="/agent-architecture-flowchart.html"
+      src={import.meta.env.BASE_URL + "agent-architecture-flowchart.html"}
       style={{ width: "100%", height: "calc(100vh - 52px)", border: "none" }}
       title="Agent Architecture Flowchart"
     />
