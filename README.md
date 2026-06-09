@@ -10,6 +10,12 @@ Full lifecycle coverage: design → build → test → deploy → operate. Cover
 ### [GPU Inference Deep Dive](docs/gpu-inference-deep-dive.md) — 10 Modules
 Ground-up course on how LLM inference runs on an H100 — from hardware architecture to tokens, with exact specs, data flow diagrams, and real latency numbers. Covers quantization, KV cache, continuous batching, tensor/pipeline parallelism, and a full end-to-end request trace.
 
+### [Production Agent Infrastructure](docs/production-agent-infrastructure.md) — 9 Chapters
+Enterprise-grade deployment of multi-agent systems on OpenShift. Covers every infrastructure component from edge load balancers to disaster recovery — two-tier load balancing, API gateway pipelines, LangGraph state management, two-loop multi-agent orchestration (supervisor + ReAct), CI/CD with canary deployment, scaling from 10 to 2M users, observability internals (OTel/Prometheus/Grafana), the complete evaluation metrics taxonomy (system health + AI quality + business), and a 4-agent wealth management walkthrough with parallel execution and full timing breakdown.
+
+### [Architecture Flowchart](public/agent-architecture-flowchart.html)
+Zoomable, pannable black-and-white flowchart of the complete enterprise agent architecture — from client request through every tier (external LB, internal LB, API gateway, multi-agent orchestration with supervisor outer loop and sub-agent ReAct inner loops, parallel fan-out, LLM gateway with fallback chain, MCP tool APIs, state store, observability + evaluation pipeline, CI/CD, and disaster recovery). Open in browser or view within the app at `/flowchart`.
+
 ## Getting Started
 
 ```bash
@@ -29,4 +35,4 @@ Deploy instantly on [Vercel](https://vercel.com) or [Netlify](https://netlify.co
 
 ## Contributing
 
-PRs welcome. Add new modules following the existing component patterns (`Code`, `Diagram`, `Table`, `Callout`, `FlowBox`), register the route in `App.jsx`, and include a doc file under `docs/`.
+PRs welcome. Add new modules following the existing component patterns (`Lead`, `PullQuote`, `Aside`, `Def`, `Code`, `Diagram`, `Table`, `Callout`, `FlowBox`), register the route in `App.jsx`, and include a doc file under `docs/`.
